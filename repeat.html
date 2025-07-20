@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+        <title>JSP Page</title>
+        <style>
+            body{
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            #form{
+                height: 300px;
+                width: 400px;
+                background:linear-gradient(135deg,grey,white 80%);                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding: 20px;
+                border-radius: 20px;
+                border: 2px solid ;
+            }
+            input{
+                padding: 5px 10px;
+border-radius: 9px;
+border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='form'>
+        <h1>Login Form</h1>
+        <form method="post" action="code1.jsp">
+            <table>
+                <tr>
+                    <td>Username :</td>
+                    <td><input type="text" name="username"/></td>
+                </tr>
+                  <tr>
+                    <td>Password :</td>
+                    <td><input type="password" name="password"/></td>
+                </tr>
+                  <tr>
+                    <td>Remember Me :</td>
+                    <td><input type="checkbox" name="agree"/></td>
+                </tr>
+            </table>
+            <button>Login</button>
+            <button>Reset</button>
+            <br><!-- comment --><br>
+        <a href="url" target="_blank">Forget Password</a>
+        <br><!-- comment --><br><!-- comment -->
+        <p>Don't have an anccount?<a href="url" target="_blank">Register Here</a></p>
+        </form>
+        </div>
+    </body>
+</html>
